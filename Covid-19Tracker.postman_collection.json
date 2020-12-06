@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "1987a0ca-c5de-414c-ab5e-f77d868146a6",
+		"name": "Covid-19 Tracker",
+		"description": "Covid-19 Tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "General stats",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4aa79d40-a9a8-4a72-b667-109c02ef12de",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newurl}}/api/v1/cases/general-stats",
+					"host": [
+						"{{newurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cases",
+						"general-stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{newurl}}/api/v1/cases/countries-search",
+					"host": [
+						"{{newurl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cases",
+						"countries-search"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
